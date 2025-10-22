@@ -1,3 +1,3 @@
 # eShopExchange
 
-![Screenshot of eShopExchange](preview.png)
+![Screenshot of eShopExchange](./public/preview.png)
