@@ -5,48 +5,6 @@ import { ErrorBoundary } from "react-error-boundary";
 import AddProductForm from "./AddProductForm";
 import EditProductForm from "./EditProductForm";
 
-// TODO: Features implemented with fetchAllRecords:
-// ✅ Set up the SDK
-// ✅ Fetch products from data source on MantaHQ
-// ✅ Display in Products component
-// ✅ Add category filter
-// ✅ Add price sorting
-// ✅ Add pagination
-// ✅ Add search functionality
-
-// TODO: Features implemented with createRecords:
-// ✅ Create an "Add Product" button in the Navigation component
-// ✅ Add state for modal visibility (isOpen)
-// ✅ Create AddProductForm component with form fields (name, category, price, stock, description, image_url)
-// ✅ Implement createProduct function using manta.createRecords()
-// ✅ Add form validation (name: minLength 3, price: > 0, stock: >= 0)
-// ✅ Generate unique product_id using timestamp
-// ✅ Use upsert option to handle potential conflicts
-// ✅ Handle errors and show user-friendly messages
-// ✅ Close modal on successful submission
-// ✅ Refetch products list after creating new product
-// ✅ Add loading state while creating product
-// ✅ Test with duplicate product_ids to verify upsert behavior
-
-// TODO: Features to add with updateRecords method:
-// - Add "Edit" button on each product card
-// - Add state for edit modal visibility (isEditOpen)
-// - Add state to track which product is being edited (selectedProduct)
-// - Create EditProductForm component with pre-filled form fields
-// - Implement updateProduct function using manta.updateRecords()
-// - CRITICAL: Always include where clause to target specific product
-// - Add validation using validationRule (singular, not plural!)
-// - Update only the fields that changed
-// - Handle errors with user-friendly messages
-// - Close modal on successful update
-// - Refetch products list after updating
-// - Add loading state while updating
-// - BONUS: Implement bulk price update by category
-// - BONUS: Add discount system using updateRecords
-// - BONUS: Implement stock adjustment feature
-// - BONUS: Add dryRun preview before bulk updates
-// - BONUS: Mark low stock items automatically
-
 const API_KEY = import.meta.env.VITE_MANTAHQ_API_KEY;
 const manta = new MantaClient({
   sdkKey: API_KEY,
