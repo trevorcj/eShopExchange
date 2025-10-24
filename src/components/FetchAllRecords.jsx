@@ -3,15 +3,6 @@ import { useEffect, useState } from "react";
 import { useDebounce } from "use-debounce";
 import { ErrorBoundary } from "react-error-boundary";
 
-// TODO: Features to add with the fetchOneRecords method:
-// - Set up the SDK
-// - Fetch products from data source on mantaHQ
-// - Display in Products component
-// - Add category filter
-// - Add price sorting
-// - Add pagination
-// - Add search functionality
-
 const API_KEY = import.meta.env.VITE_MANTAHQ_API_KEY;
 const manta = new MantaClient({
   sdkKey: API_KEY,
