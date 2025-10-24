@@ -4,31 +4,6 @@ import { useDebounce } from "use-debounce";
 import { ErrorBoundary } from "react-error-boundary";
 import AddProductForm from "./AddProductForm";
 
-// TODO: Features implemented with fetchAllRecords:
-// ✅ Set up the SDK
-// ✅ Fetch products from data source on MantaHQ
-// ✅ Display in Products component
-// ✅ Add category filter
-// ✅ Add price sorting
-// ✅ Add pagination
-// ✅ Add search functionality
-
-// TODO: Features to add with createRecords method:
-// - Create an "Add Product" button in the Navigation component
-// - Add state for modal visibility (isOpen)
-// - Create AddProductForm component with form fields (name, category, price, stock, description, image_url)
-// - Implement createProduct function using manta.createRecords()
-// - Add form validation (name: minLength 3, price: > 0, stock: >= 0)
-// - Generate unique product_id using timestamp
-// - Use upsert option to handle potential conflicts
-// - Handle errors and show user-friendly messages
-// - Close modal on successful submission
-// - Refetch products list after creating new product
-// - Add loading state while creating product
-// - Test with duplicate product_ids to verify upsert behavior
-// - BONUS: Add dryRun option to preview before actual creation
-// - BONUS: Implement bulk product creation (multiple products at once)
-
 const API_KEY = import.meta.env.VITE_MANTAHQ_API_KEY;
 const manta = new MantaClient({
   sdkKey: API_KEY,
