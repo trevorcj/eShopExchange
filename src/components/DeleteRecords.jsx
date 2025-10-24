@@ -6,59 +6,6 @@ import AddProductForm from "./AddProductForm";
 import EditProductForm from "./EditProductForm";
 import DeleteConfirmModal from "./DeleteConfirmModal";
 
-// TODO: Features implemented with fetchAllRecords:
-// ✅ Set up the SDK
-// ✅ Fetch products from data source on MantaHQ
-// ✅ Display in Products component
-// ✅ Add category filter
-// ✅ Add price sorting
-// ✅ Add pagination
-// ✅ Add search functionality
-
-// TODO: Features implemented with createRecords:
-// ✅ Create an "Add Product" button in the Navigation component
-// ✅ Add state for modal visibility (isOpen)
-// ✅ Create AddProductForm component with form fields
-// ✅ Implement createProduct function using manta.createRecords()
-// ✅ Add form validation (name: minLength 3, price: > 0, stock: >= 0)
-// ✅ Generate unique product_id using timestamp
-// ✅ Use upsert option to handle potential conflicts
-// ✅ Handle errors and show user-friendly messages
-// ✅ Close modal on successful submission
-// ✅ Refetch products list after creating new product
-// ✅ Add loading state while creating product
-
-// TODO: Features implemented with updateRecords:
-// ✅ Add "Edit" button on each product card
-// ✅ Add state for edit modal visibility (isEditOpen)
-// ✅ Add state to track which product is being edited (selectedProduct)
-// ✅ Create EditProductForm component with pre-filled form fields
-// ✅ Implement updateProduct function using manta.updateRecords()
-// ✅ Always include where clause to target specific product
-// ✅ Add validation using validationRule (singular!)
-// ✅ Handle errors with user-friendly messages
-// ✅ Close modal on successful update
-// ✅ Refetch products list after updating
-// ✅ Add loading state while updating
-
-// TODO: Features to add with deleteRecords method:
-// - Add delete icon (trash) on upper right of each product card
-// - Add state for delete confirmation modal (isDeleteOpen)
-// - Add state to track which product is being deleted (productToDelete)
-// - Create DeleteConfirmModal component with warning message
-// - Implement deleteProduct function using manta.deleteRecords()
-// - CRITICAL: Always include where clause to delete specific product
-// - Show product name in confirmation message
-// - Handle errors with user-friendly messages
-// - Close modal after successful deletion
-// - Refetch products list after deleting
-// - Add loading state while deleting
-// - Prevent accidental deletion with confirmation step
-// - BONUS: Add "undo" feature (soft delete)
-// - BONUS: Implement bulk delete by category
-// - BONUS: Add archive instead of delete option
-// - BONUS: Show deleted count in success message
-
 const API_KEY = import.meta.env.VITE_MANTAHQ_API_KEY;
 const manta = new MantaClient({
   sdkKey: API_KEY,
