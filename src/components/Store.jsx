@@ -11,7 +11,7 @@ const manta = new MantaClient({
   sdkKey: API_KEY,
 });
 
-function DeleteRecords() {
+function Store() {
   return (
     <ErrorBoundary
       FallbackComponent={Fallback}
@@ -447,4 +447,4 @@ function Paging({ currentPage, setCurrentPage, totalPages }) {
   );
 }
 
-export default DeleteRecords;
+export default Store;

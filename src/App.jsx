@@ -1,9 +1,9 @@
-import DeleteRecords from "./components/DeleteRecords";
+import Store from "./components/Store";
 
 function App() {
   return (
     <>
-      <DeleteRecords />
+      <Store />
     </>
   );
 }
